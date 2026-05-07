@@ -30,7 +30,7 @@
 <body>
     <style>
         .body_wala_t {
-            background: red;
+            /* background: red; */
             padding: 0;
             width: 100%;
         }
@@ -107,8 +107,8 @@
             flex: 1;
             position: relative;
             height: 168px;
-            padding-left: 30px;
-            padding-right: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         /* GRID */
@@ -139,7 +139,7 @@
             bottom: -32px;
             left: 30px;
             right: 10px;
-            height: 320px;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
@@ -159,7 +159,7 @@
             position: relative;
             width: 100%;
             max-width: 32px;
-            height: 320px;
+            height: 168px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -191,88 +191,204 @@
         }
 
         .x-axis-title_t {
+            width: calc(100% - 90px);
+            margin-left: 90px;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 38px;
             color: #0F0F0F;
             font-family: AvantGardeMdITC;
             font-size: 14px;
             font-weight: 400;
         }
 
-        /* TABLET */
+        /* =========================
+   TABLET
+========================= */
 
         @media (max-width:768px) {
 
-            
-
-            .chart-wrapper_t {
-                height: 360px;
+            .chart-container_t {
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
             }
 
-            .bars_t {
-                height: 260px;
+            /* chart width for scroll */
+            .chart-layout_t {
+                min-width: 720px;
             }
 
-            .bar-wrapper_t {
-                height: 260px;
-            }
-
-            .month-name_t {
-                font-size: 12px;
-            }
-
-            .y-label_t {
-                left: -58px;
-                font-size: 12px;
-            }
-        }
-
-        /* MOBILE */
-
-        @media (max-width:480px) {
-
-            .body_wala_t {
-                padding: 0;
-            }
-
-           
-
+            /* legend aligned with chart width */
             .legend_t {
-                justify-content: center;
+                width: 720px;
+                justify-content: flex-end;
+                gap: 16px;
+                margin-bottom: 12px;
+            }
+
+            .legend-item_t {
+                font-size: 13px;
             }
 
             .chart-wrapper_t {
-                height: 320px;
-                padding-left: 35px;
+                height: 220px;
+                padding-left: 20px;
+                padding-right: 10px;
             }
 
             .bars_t {
-                left: 35px;
-                height: 220px;
+                left: 20px;
+                right: 10px;
+                height: 100%;
                 gap: 10px;
             }
 
             .bar-wrapper_t {
                 height: 220px;
-                max-width: 24px;
+                /* max-width:26px; */
             }
 
             .month-name_t {
-                font-size: 11px;
+                font-size: 12px;
+                margin-top: 10px;
             }
 
             .y-label_t {
-                left: -48px;
+                left: -52px;
                 width: 40px;
-                font-size: 11px;
+                top: -8px;
             }
 
             .y-axis-title_t {
-                margin-right: 14px;
+                /* margin-right:20px; */
+                padding-left: 0;
             }
 
             .x-axis-title_t {
-                font-size: 16px;
+                margin-top: 40px;
+            }
+
+            .chart-container_t {
+                scrollbar-width: none;
+                /* Firefox */
+                -ms-overflow-style: none;
+                /* IE & Edge */
+            }
+
+            .chart-container_t::-webkit-scrollbar {
+                display: none;
+                /* Chrome, Safari */
+            }
+
+            .x-axis-title_t {
+                width: 132%;
+                margin-left: 72px;
+            }
+        }
+
+
+        /* =========================
+MOBILE
+========================= */
+
+        @media (max-width:480px) {
+
+            .body_wala_t {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .x-axis-title_t {
+                width: calc(210% - 90px);
+                margin-left: 90px;
+            }
+
+            .chart-container_t {
+                width: 100%;
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* fixed width for smooth horizontal scroll */
+            .chart-layout_t {
+                min-width: 680px;
+            }
+
+            /* legend width same as chart */
+            .legend_t {
+                width: 680px;
+                justify-content: flex-end;
+                gap: 14px;
+                margin-bottom: 10px;
+            }
+
+            .legend-item_t {
+                font-size: 12px;
+                gap: 6px;
+            }
+
+            .dot_t {
+                width: 7px;
+                height: 7px;
+            }
+
+            .chart-wrapper_t {
+                height: 180px;
+                padding-left: 18px;
+                padding-right: 10px;
+            }
+
+            .bars_t {
+                left: 18px;
+                right: 10px;
+                height: 100%;
+                gap: 8px;
+            }
+
+            .bar-wrapper_t {
+                height: 180px;
+                /* max-width:22px; */
+            }
+
+            .month_t {
+                min-width: 22px;
+            }
+
+            .month-name_t {
+                font-size: 10px;
+                margin-top: 8px;
+            }
+
+            .grid-line_t {
+                border-top: 1px solid #f0f0f0;
+            }
+
+            .y-label_t {
+                left: -42px;
+                width: 40px;
+                top: -8px;
+            }
+
+            .y-axis-title_t {
+                /* margin-right:20px; */
+                padding-left: 0;
+            }
+
+            .x-axis-title_t {
+                margin-top: 34px;
+            }
+
+            .chart-container_t {
+                scrollbar-width: none;
+                /* Firefox */
+                -ms-overflow-style: none;
+                /* IE & Edge */
+            }
+
+            .chart-container_t::-webkit-scrollbar {
+                display: none;
+                /* Chrome, Safari */
             }
         }
     </style>
@@ -466,35 +582,36 @@
                                         </div>
                                         <div class="divider_t"></div>
                                         <p class="differnt_text">Loyalty tier</p>
-                                        <div class="color_wala_div">
-                                            <p class="color_wala_div_p">Bronze</p>
-                                            <p class="color_wala_div_p">Silver</p>
-                                            <p class="color_wala_div_p">Gold</p>
-                                        </div>
-                                        <div class="for_full_palce">
-                                            <div class="t-custom-progress">
-                                                <div class="t-custom-progress-bar"></div>
-
+                                        <div class="furteen_wala_div">
+                                            <div class="color_wala_div">
+                                                <p class="color_wala_div_p">Bronze</p>
+                                                <p class="color_wala_div_p">Silver</p>
+                                                <p class="color_wala_div_p">Gold</p>
                                             </div>
-                                            <img src="./img/bronze_t.svg" alt="" class="bronze_t">
-                                            <img src="./img/silver_t.svg" alt="" class="silver_t">
-                                            <img src="./img/gold_t.svg" alt="" class="gold_t">
+                                            <div class="for_full_palce">
+                                                <div class="t-custom-progress">
+                                                    <div class="t-custom-progress-bar"></div>
+
+                                                </div>
+                                                <img src="./img/bronze_t.svg" alt="" class="bronze_t">
+                                                <img src="./img/silver_t.svg" alt="" class="silver_t">
+                                                <img src="./img/gold_t.svg" alt="" class="gold_t">
+                                            </div>
+
+                                            <div class="color_wala_div">
+                                                <p class="color_wala_div_p2">$300+ Spend<br>
+                                                    get 5% Discount</p>
+                                                <p class="color_wala_div_p2">$600+ Spend<br>
+                                                    get 7% Discount</p>
+                                                <p class="color_wala_div_p2">$1,500+ Spend<br>
+                                                    get 12% Discount</p>
+                                            </div>
                                         </div>
 
-                                        <div class="color_wala_div">
-                                            <p class="color_wala_div_p2">$300+ Spend<br>
-                                                get 5% Discount</p>
-                                            <p class="color_wala_div_p2">$600+ Spend<br>
-                                                get 7% Discount</p>
-                                            <p class="color_wala_div_p2">$1,500+ Spend<br>
-                                                get 12% Discount</p>
-                                        </div>
 
                                         <div class="divider_t"></div>
                                         <p class="differnt_text">Usage chart</p>
-                                        <div style="height: 240px; background-color: blue; width: 100%;">
 
-                                        </div>
                                         <div class="body_wala_t">
                                             <div class="chart-container_t">
 
@@ -532,27 +649,27 @@
 
                                                         <div class="grid-line_t" style="bottom:0%">
                                                             <div class="y-label_t">0</div>
-                                                          </div>
-                                                          
-                                                          <div class="grid-line_t" style="bottom:20%">
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:20%">
                                                             <div class="y-label_t">500</div>
-                                                          </div>
-                                                          
-                                                          <div class="grid-line_t" style="bottom:40%">
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:40%">
                                                             <div class="y-label_t">1,000</div>
-                                                          </div>
-                                                          
-                                                          <div class="grid-line_t" style="bottom:60%">
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:60%">
                                                             <div class="y-label_t">2,000</div>
-                                                          </div>
-                                                          
-                                                          <div class="grid-line_t" style="bottom:80%">
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:80%">
                                                             <div class="y-label_t">4,000</div>
-                                                          </div>
-                                                          
-                                                          <div class="grid-line_t" style="bottom:100%">
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:100%">
                                                             <div class="y-label_t">8,000</div>
-                                                          </div>
+                                                        </div>
 
                                                         <!-- DYNAMIC BARS -->
 
@@ -570,7 +687,14 @@
 
                                             </div>
                                         </div>
-
+                                        <div class="desktop_none w-100">
+                                            <div class="top_left_over_right">
+                                                <button class="btn white_button_t different_height ">Transaction
+                                                    history</button>
+                                                <button class="btn yellow_btn_t different_height ">Top
+                                                    up</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -614,15 +738,131 @@
                                 aria-labelledby="v-pills-messages-tab" tabindex="0">
                                 <div class="main_tab_tab">
 
-                                    <form class="left_overview">
+                                    <div class="left_overview2">
                                         <div class="top_left_over">
                                             <h1 class="main_tt">My Wallet</h1>
                                             <button class="btn yellow_btn_t different_height diferent_width">Top
                                                 up</button>
                                         </div>
+                                        <div class="second_right_overview">
+                                            <div class="left_second_right_overview">
+                                                <h1>Current Balance</h1>
+                                                <p>4,862 Credits</p>
+                                            </div>
+                                            <div class="right_second_right_overview">
+                                                <h1>Amount saved</h1>
+                                                <p>$2,671</p>
+                                            </div>
+                                        </div>
+                                        <div class="divider_t"></div>
+                                        <p class="differnt_text">Loyalty tier</p>
+                                        <div class="furteen_wala_div">
+                                            <div class="color_wala_div">
+                                                <p class="color_wala_div_p">Bronze</p>
+                                                <p class="color_wala_div_p">Silver</p>
+                                                <p class="color_wala_div_p">Gold</p>
+                                            </div>
+                                            <div class="for_full_palce">
+                                                <div class="t-custom-progress">
+                                                    <div class="t-custom-progress-bar"></div>
 
-                                    </form>
-                                    <div class="right_overview">
+                                                </div>
+                                                <img src="./img/bronze_t.svg" alt="" class="bronze_t">
+                                                <img src="./img/silver_t.svg" alt="" class="silver_t">
+                                                <img src="./img/gold_t.svg" alt="" class="gold_t">
+                                            </div>
+
+                                            <div class="color_wala_div">
+                                                <p class="color_wala_div_p2">$300+ Spend<br>
+                                                    get 5% Discount</p>
+                                                <p class="color_wala_div_p2">$600+ Spend<br>
+                                                    get 7% Discount</p>
+                                                <p class="color_wala_div_p2">$1,500+ Spend<br>
+                                                    get 12% Discount</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="divider_t"></div>
+                                        <p class="differnt_text">Usage chart</p>
+
+                                        <div class="body_wala_t">
+                                            <div class="chart-container_t">
+
+                                                <!-- LEGEND -->
+
+                                                <div class="legend_t">
+
+                                                    <div class="legend-item_t">
+                                                        <div class="dot_t gray_t"></div>
+                                                        Credits
+                                                    </div>
+
+                                                    <div class="legend-item_t">
+                                                        <div class="dot_t green_t"></div>
+                                                        Money Saved
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- CHART LAYOUT -->
+
+                                                <div class="chart-layout_t">
+
+                                                    <!-- LEFT SIDE TITLE -->
+
+                                                    <div class="y-axis-title_t">
+                                                        Credits
+                                                    </div>
+
+                                                    <!-- CHART -->
+
+                                                    <div class="chart-wrapper_t">
+
+                                                        <!-- GRID LINES -->
+
+                                                        <div class="grid-line_t" style="bottom:0%">
+                                                            <div class="y-label_t">0</div>
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:20%">
+                                                            <div class="y-label_t">500</div>
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:40%">
+                                                            <div class="y-label_t">1,000</div>
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:60%">
+                                                            <div class="y-label_t">2,000</div>
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:80%">
+                                                            <div class="y-label_t">4,000</div>
+                                                        </div>
+
+                                                        <div class="grid-line_t" style="bottom:100%">
+                                                            <div class="y-label_t">8,000</div>
+                                                        </div>
+
+                                                        <!-- DYNAMIC BARS -->
+
+                                                        <div class="bars_t" id="barsContainer"></div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- X AXIS -->
+
+                                                <div class="x-axis-title_t">
+                                                    Month
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right_overview2">
 
 
                                     </div>
@@ -940,8 +1180,8 @@
     <script>
         const chartData = [{
                 month: "Jan",
-                credits: 3500,
-                saved: 700
+                credits: 8000,
+                saved: 700,
             },
             {
                 month: "Feb",
@@ -1005,7 +1245,7 @@
 
         const maxValue = 8000;
 
-        const maxBarHeight = 160;
+        const maxBarHeight = 168;
 
         chartData.forEach(item => {
 

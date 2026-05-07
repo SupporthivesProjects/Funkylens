@@ -296,6 +296,21 @@
     width: 100%;
 }
 
+.left_overview2 {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Base-04, #E9E9E9);
+    background: var(--Base-White, #FFF);
+    max-width: 708px;
+    width: 100%;
+}
+
+
 .right_overview {
     display: flex;
     padding: 40px;
@@ -307,6 +322,20 @@
     border-radius: 8px;
     border: 1px solid var(--Base-04, #E9E9E9);
     background: var(--Base-White, #FFF);
+    max-width: 708px;
+    width: 100%;
+}
+.right_overview2 {
+    display: flex;
+padding: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+flex: 1 0 0;
+align-self: stretch;
+border-radius: 8px;
+border: 1px solid var(--Base-04, #E9E9E9);
+background: var(--Base-White, #FFF);
     max-width: 708px;
     width: 100%;
 }
@@ -669,6 +698,15 @@ margin-bottom: 0px;
     width: 100%;
     margin-bottom: 0px;
 }
+.furteen_wala_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    align-self: stretch;
+    width: 100%;
+}
 @media only screen and (max-width: 700px) {
     .mobile_none {
         display: none;
@@ -677,7 +715,15 @@ margin-bottom: 0px;
     .desktop_none {
         display: block;
     }
+    .color_wala_div {
+        gap: 40px;
+        padding: 0px 40px;
+    }
 
+    .color_wala_div_p {
+        max-width: 56px;
+        width: 100%;
+    }
     .tab_dropdown_toggle {
         display: flex !important;
         justify-content: space-between;
@@ -856,11 +902,31 @@ margin-bottom: 0px;
         border-radius: 0px;
         border: 0px;
     }
+    .left_overview2 {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        border-radius: 0px;
+        border: 0px;
+    }
     .top_left_over_right {
         flex-direction: column;
         width: 100%;
     }
     .right_overview {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .right_overview2 {
         display: flex;
         padding: 24px;
         flex-direction: column;

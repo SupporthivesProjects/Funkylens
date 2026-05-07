@@ -28,6 +28,254 @@
 </head>
 
 <body>
+    <style>
+        .body_wala_t {
+            background: red;
+            padding: 0;
+            width: 100%;
+        }
+
+        .chart-container_t {
+            width: 100%;
+            margin: auto;
+            background: #fff;
+            border-radius: 14px;
+            overflow-x: auto;
+        }
+
+        /* LEGEND */
+
+        .legend_t {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item_t {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #0F0F0F;
+            font-family: AvantGardeMdITC;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .dot_t {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .dot_t.gray_t {
+            background: #E9E9E9;
+        }
+
+        .dot_t.green_t {
+            background: #47B147;
+        }
+
+        /* CHART AREA */
+
+        .chart-layout_t {
+            display: flex;
+            width: 100%;
+        }
+
+        /* LEFT TITLE */
+
+        .y-axis-title_t {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            color: #0F0F0F;
+            font-family: AvantGardeMdITC;
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 49px;
+            padding-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        /* CHART */
+
+        .chart-wrapper_t {
+            flex: 1;
+            position: relative;
+            height: 168px;
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+
+        /* GRID */
+
+        .grid-line_t {
+            position: absolute;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .y-label_t {
+            position: absolute;
+            left: -58px;
+            top: -10px;
+            width: 40px;
+            text-align: right;
+            color: #667085;
+            font-family: AvantGardeMdITC;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        /* BARS */
+
+        .bars_t {
+            position: absolute;
+            bottom: -32px;
+            left: 30px;
+            right: 10px;
+            height: 320px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        .month_t {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            min-width: 24px;
+        }
+
+        .bar-wrapper_t {
+            position: relative;
+            width: 100%;
+            max-width: 32px;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .bar-gray_t,
+        .bar-green_t {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            transition: 0.3s;
+        }
+
+        .bar-gray_t {
+            background: #dddddd;
+        }
+
+        .bar-green_t {
+            background: #47B147;
+            z-index: 2;
+        }
+
+        .month-name_t {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+
+        .x-axis-title_t {
+            text-align: center;
+            margin-top: 50px;
+            color: #0F0F0F;
+            font-family: AvantGardeMdITC;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        /* TABLET */
+
+        @media (max-width:768px) {
+
+            
+
+            .chart-wrapper_t {
+                height: 360px;
+            }
+
+            .bars_t {
+                height: 260px;
+            }
+
+            .bar-wrapper_t {
+                height: 260px;
+            }
+
+            .month-name_t {
+                font-size: 12px;
+            }
+
+            .y-label_t {
+                left: -58px;
+                font-size: 12px;
+            }
+        }
+
+        /* MOBILE */
+
+        @media (max-width:480px) {
+
+            .body_wala_t {
+                padding: 0;
+            }
+
+           
+
+            .legend_t {
+                justify-content: center;
+            }
+
+            .chart-wrapper_t {
+                height: 320px;
+                padding-left: 35px;
+            }
+
+            .bars_t {
+                left: 35px;
+                height: 220px;
+                gap: 10px;
+            }
+
+            .bar-wrapper_t {
+                height: 220px;
+                max-width: 24px;
+            }
+
+            .month-name_t {
+                font-size: 11px;
+            }
+
+            .y-label_t {
+                left: -48px;
+                width: 40px;
+                font-size: 11px;
+            }
+
+            .y-axis-title_t {
+                margin-right: 14px;
+            }
+
+            .x-axis-title_t {
+                font-size: 16px;
+            }
+        }
+    </style>
 
     <div class="main-div">
         <header class="header-top fixed-top" id="header-top">
@@ -206,6 +454,122 @@
                                             </div>
 
                                         </div>
+                                        <div class="second_right_overview">
+                                            <div class="left_second_right_overview">
+                                                <h1>Current Balance</h1>
+                                                <p>4,862 Credits</p>
+                                            </div>
+                                            <div class="right_second_right_overview">
+                                                <h1>Amount saved</h1>
+                                                <p>$2,671</p>
+                                            </div>
+                                        </div>
+                                        <div class="divider_t"></div>
+                                        <p class="differnt_text">Loyalty tier</p>
+                                        <div class="color_wala_div">
+                                            <p class="color_wala_div_p">Bronze</p>
+                                            <p class="color_wala_div_p">Silver</p>
+                                            <p class="color_wala_div_p">Gold</p>
+                                        </div>
+                                        <div class="for_full_palce">
+                                            <div class="t-custom-progress">
+                                                <div class="t-custom-progress-bar"></div>
+
+                                            </div>
+                                            <img src="./img/bronze_t.svg" alt="" class="bronze_t">
+                                            <img src="./img/silver_t.svg" alt="" class="silver_t">
+                                            <img src="./img/gold_t.svg" alt="" class="gold_t">
+                                        </div>
+
+                                        <div class="color_wala_div">
+                                            <p class="color_wala_div_p2">$300+ Spend<br>
+                                                get 5% Discount</p>
+                                            <p class="color_wala_div_p2">$600+ Spend<br>
+                                                get 7% Discount</p>
+                                            <p class="color_wala_div_p2">$1,500+ Spend<br>
+                                                get 12% Discount</p>
+                                        </div>
+
+                                        <div class="divider_t"></div>
+                                        <p class="differnt_text">Usage chart</p>
+                                        <div style="height: 240px; background-color: blue; width: 100%;">
+
+                                        </div>
+                                        <div class="body_wala_t">
+                                            <div class="chart-container_t">
+
+                                                <!-- LEGEND -->
+
+                                                <div class="legend_t">
+
+                                                    <div class="legend-item_t">
+                                                        <div class="dot_t gray_t"></div>
+                                                        Credits
+                                                    </div>
+
+                                                    <div class="legend-item_t">
+                                                        <div class="dot_t green_t"></div>
+                                                        Money Saved
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- CHART LAYOUT -->
+
+                                                <div class="chart-layout_t">
+
+                                                    <!-- LEFT SIDE TITLE -->
+
+                                                    <div class="y-axis-title_t">
+                                                        Credits
+                                                    </div>
+
+                                                    <!-- CHART -->
+
+                                                    <div class="chart-wrapper_t">
+
+                                                        <!-- GRID LINES -->
+
+                                                        <div class="grid-line_t" style="bottom:0%">
+                                                            <div class="y-label_t">0</div>
+                                                          </div>
+                                                          
+                                                          <div class="grid-line_t" style="bottom:20%">
+                                                            <div class="y-label_t">500</div>
+                                                          </div>
+                                                          
+                                                          <div class="grid-line_t" style="bottom:40%">
+                                                            <div class="y-label_t">1,000</div>
+                                                          </div>
+                                                          
+                                                          <div class="grid-line_t" style="bottom:60%">
+                                                            <div class="y-label_t">2,000</div>
+                                                          </div>
+                                                          
+                                                          <div class="grid-line_t" style="bottom:80%">
+                                                            <div class="y-label_t">4,000</div>
+                                                          </div>
+                                                          
+                                                          <div class="grid-line_t" style="bottom:100%">
+                                                            <div class="y-label_t">8,000</div>
+                                                          </div>
+
+                                                        <!-- DYNAMIC BARS -->
+
+                                                        <div class="bars_t" id="barsContainer"></div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- X AXIS -->
+
+                                                <div class="x-axis-title_t">
+                                                    Month
+                                                </div>
+
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -253,7 +617,8 @@
                                     <form class="left_overview">
                                         <div class="top_left_over">
                                             <h1 class="main_tt">My Wallet</h1>
-                                            <button class="btn yellow_btn_t different_height diferent_width">Top up</button>
+                                            <button class="btn yellow_btn_t different_height diferent_width">Top
+                                                up</button>
                                         </div>
 
                                     </form>
@@ -267,7 +632,132 @@
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                                 aria-labelledby="v-pills-settings-tab" tabindex="0">
                                 <div class="main_tab_tab2">
+                                    <div class="single_single_t">
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                    <div class="single_single_t">
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+                                        <div class="single_card_t">
+                                            <img src="./img/card_img_t.png" alt="" class="img-fluid card_img_t">
+                                            <div class="bottom_crd_div_t">
+                                                <div class="top_bottom_card_t">
+                                                    <h1>Image name</h1>
+                                                    <div class="niche_top_t">
+                                                        <h3>Order ID #3061</h3>
+                                                        <h3>Jan 5, 2024</h3>
+                                                    </div>
+                                                </div>
+                                                <p>At id augue viverra magna sem commodo elementum vivamus tellus.
+                                                    Tempus id sit quam lacus dignissim in.</p>
+                                                <h2>Download</h2>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -444,6 +934,113 @@
                     toggle.classList.remove('open'); // reset arrow
                 });
             });
+
+        });
+    </script>
+    <script>
+        const chartData = [{
+                month: "Jan",
+                credits: 3500,
+                saved: 700
+            },
+            {
+                month: "Feb",
+                credits: 7000,
+                saved: 900
+            },
+            {
+                month: "Mar",
+                credits: 1800,
+                saved: 500
+            },
+            {
+                month: "Apr",
+                credits: 4200,
+                saved: 750
+            },
+            {
+                month: "May",
+                credits: 1700,
+                saved: 520
+            },
+            {
+                month: "Jun",
+                credits: 6000,
+                saved: 850
+            },
+            {
+                month: "Jul",
+                credits: 3500,
+                saved: 680
+            },
+            {
+                month: "Aug",
+                credits: 4200,
+                saved: 720
+            },
+            {
+                month: "Sep",
+                credits: 3600,
+                saved: 690
+            },
+            {
+                month: "Oct",
+                credits: 5000,
+                saved: 800
+            },
+            {
+                month: "Nov",
+                credits: 7100,
+                saved: 920
+            },
+            {
+                month: "Dec",
+                credits: 3000,
+                saved: 620
+            }
+        ];
+
+        const barsContainer =
+            document.getElementById("barsContainer");
+
+        const maxValue = 8000;
+
+        const maxBarHeight = 160;
+
+        chartData.forEach(item => {
+
+            const grayHeight =
+                (item.credits / maxValue) * maxBarHeight;
+
+            const greenHeight =
+                (item.saved / maxValue) * maxBarHeight;
+
+            const monthDiv = document.createElement("div");
+
+            monthDiv.classList.add("month_t");
+
+            monthDiv.innerHTML = `
+        
+            <div class="bar-wrapper_t">
+        
+              <div
+                class="bar-gray_t"
+                style="height:${grayHeight}px;"
+              ></div>
+        
+              <div
+                class="bar-green_t"
+                style="height:${greenHeight}px;"
+              ></div>
+        
+            </div>
+        
+            <div class="month-name_t">
+              ${item.month}
+            </div>
+          `;
+
+            barsContainer.appendChild(monthDiv);
 
         });
     </script>

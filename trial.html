@@ -1,0 +1,257 @@
+<div class="main_wrapper_t">
+
+    <!-- TOP CONTENT SECTIONS -->
+    <div class="sections_wrapper_t">
+
+        <div class="section_content_t active" data-section="1">
+           
+        </div>
+
+        <div class="section_content_t" data-section="2">
+            
+        </div>
+
+        <div class="section_content_t" data-section="3">
+           
+        </div>
+
+
+       
+
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination_section">
+
+        <p class="prev_btn_t disabled">prev</p>
+
+        <div class="insde_pag">
+
+            <h2 class="pag_start">01</h2>
+
+            <div class="line_of_pg">
+                <div class="line_fill_t"></div>
+            </div>
+
+            <h2 class="pag_end">05</h2>
+
+        </div>
+
+        <p class="next_btn_t">next</p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    .main_wrapper_t {
+    width: 100%;
+}
+
+/* SECTIONS */
+
+.sections_wrapper_t {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section_content_t {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    
+    
+}
+
+.section_content_t.active {
+    display: flex;
+}
+
+/* PAGINATION */
+
+.pagination_section {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    width: 100%;
+}
+
+.pagination_section p {
+    color: #FFA602;
+    font-family: Afacad;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* DISABLED */
+
+.pagination_section p.disabled {
+    /* color: red; */
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* CENTER */
+
+.insde_pag {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+/* NUMBERS */
+
+.pag_start {
+    color: #FFA602;
+    font-family: Afacad;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.pag_end {
+    color: #BDBDBD;
+    font-family: Afacad;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* LINE */
+
+.line_of_pg {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #6B6B6B;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.line_fill_t {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    background: #FFA602;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+
+</style>
+
+
+
+
+
+
+<script>
+    const totalSections_t = 4;
+    let currentSection_t = 1;
+
+    const sections_t = document.querySelectorAll(".section_content_t");
+
+    const prevBtn_t = document.querySelector(".prev_btn_t");
+    const nextBtn_t = document.querySelector(".next_btn_t");
+
+    const currentText_t = document.querySelector(".pag_start");
+    const totalText_t = document.querySelector(".pag_end");
+
+    const lineFill_t = document.querySelector(".line_fill_t");
+
+    totalText_t.innerText = String(totalSections_t).padStart(2, "0");
+
+    /* UPDATE */
+
+    function updatePagination_t() {
+
+        /* CHANGE SECTION */
+
+        sections_t.forEach((section, index) => {
+
+            section.classList.remove("active");
+
+            if (index === currentSection_t - 1) {
+                section.classList.add("active");
+            }
+
+        });
+
+        /* UPDATE NUMBER */
+
+        currentText_t.innerText =
+            String(currentSection_t).padStart(2, "0");
+
+        /* UPDATE LINE */
+
+        const progress =
+            (currentSection_t / totalSections_t) * 100;
+
+        lineFill_t.style.width = `${progress}%`;
+
+        /* PREV */
+
+        if (currentSection_t === 1) {
+            prevBtn_t.classList.add("disabled");
+        } else {
+            prevBtn_t.classList.remove("disabled");
+        }
+
+        /* NEXT */
+
+        if (currentSection_t === totalSections_t) {
+            nextBtn_t.classList.add("disabled");
+        } else {
+            nextBtn_t.classList.remove("disabled");
+        }
+
+    }
+
+    /* NEXT */
+
+    nextBtn_t.addEventListener("click", () => {
+
+        if (currentSection_t < totalSections_t) {
+            currentSection_t++;
+            updatePagination_t();
+        }
+
+    });
+
+    /* PREV */
+
+    prevBtn_t.addEventListener("click", () => {
+
+        if (currentSection_t > 1) {
+            currentSection_t--;
+            updatePagination_t();
+        }
+
+    });
+
+    /* INITIAL */
+
+    updatePagination_t();
+</script>
+

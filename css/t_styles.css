@@ -1,3 +1,107 @@
+.main_wrapper_t2 {
+    width: 100%;
+}
+
+/* SECTIONS */
+
+.sections_wrapper_t2 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section_content_t2 {
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.section_content_t2.active {
+    display: flex;
+}
+
+/* PAGINATION */
+
+.pagination_section_t2 {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    width: 100%;
+}
+
+.pagination_section_t2 p {
+    color: #FFA602;
+    font-family: Afacad;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* DISABLED */
+
+.pagination_section_t2 p.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* CENTER */
+
+.insde_pag_t2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+/* NUMBERS */
+
+.pag_start_t2 {
+    color: #FFA602;
+    font-family: Afacad;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.pag_end_t2 {
+    color: #BDBDBD;
+    font-family: Afacad;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* LINE */
+
+.line_of_pg_t2 {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #6B6B6B;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.line_fill_t2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    background: #FFA602;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+
+
+
 .main_wrapper_t {
     width: 100%;
 }
@@ -956,6 +1060,13 @@ line-height: 160%; /* 28.8px */
     .desktop_none {
         display: block;
     }
+    .sections_wrapper_t2 {margin-bottom: 0px;}
+    .pagination_section_t2 {
+        padding: 0px 24px 24px 24px;
+    }
+    .sections_wrapper_t {
+        margin-bottom: 24px;
+    }
     .diferent_css {
         flex-direction: column;
         gap: 16px;
@@ -1260,6 +1371,17 @@ line-height: 160%; /* 28.8px */
 
 
 
+.invoice_table_wrapper_t{
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE & Edge */
+}
+
+.invoice_table_wrapper_t::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
 
 
 .invoice_table_wrapper_t {

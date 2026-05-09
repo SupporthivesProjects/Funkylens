@@ -303,7 +303,7 @@
     padding: 6px;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     border-radius: 8px 8px 0 0;
     background: var(--Base-White, #FFF);
 }
@@ -1378,13 +1378,14 @@
 
     .right_overview2 {
         display: flex;
-        padding: 24px;
+        padding: 24px 0px 24px 24px;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
         align-self: stretch;
-        border: 0px;
-        border-radius: 0px;
+    }
+    .very_diff_pad {
+        padding-right: 24px;
     }
 
     .single_single_t {
@@ -1606,11 +1607,7 @@
         font-size: 13px;
     }
 
-    .invoice_table_t thead th,
-    .invoice_table_t tbody td {
-        padding: 16px 14px;
-        font-size: 13px;
-    }
+  
 
     .invoice_pagination_t {
         gap: 14px;

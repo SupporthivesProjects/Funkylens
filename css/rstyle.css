@@ -1,0 +1,486 @@
+/*********************/
+/* Main CSS Start */
+/*******************/
+/* Global Css */
+.desktop_none {
+    display: none !important;
+}
+
+.mobile_none {
+    display: block !important;
+}
+/* Index Page Start */
+
+/* Index Page End */
+
+
+/* Pricing Page Start */
+.pricing_s1{
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(../img/pricig_s1bg.png);;
+    padding: 183px 0px 365px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pricing_c1{
+    background-image: url(../img/pricing_rect.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 159px 24px 213px 24px;
+    max-width: 831px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pricing_s1title{
+    color: var(--Base-White, #FFF);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -1.6px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_s1subtitle{
+    color: var(--Base-04, #E9E9E9);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_s2{
+    padding: 0px 0px 119px 0px;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: visible;
+}
+.pricing_c2{
+    position: relative;
+    width: 100%;
+}
+.pricing_c2inner{
+    position: relative;
+    top: -200px;
+    align-items: center;
+    padding: 64px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin: auto;
+    background-color: #FFFFFF;
+    width: 1256px;
+    box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.07), 0 64.815px 46.852px 0 rgba(0, 0, 0, 0.05), 0 38.519px 25.481px 0 rgba(0, 0, 0, 0.04), 0 20px 13px 0 rgba(0, 0, 0, 0.04), 0 8.148px 6.519px 0 rgba(0, 0, 0, 0.03), 0 1.852px 3.148px 0 rgba(0, 0, 0, 0.02);
+}
+.hori_line1{
+    position: absolute;
+    right: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hori_line2{
+    position: absolute;
+    left: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ver_line1{
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ver_line2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -27px;
+}
+.pricing_s2titlebar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.pricing_s2title{
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_s2subtitle{
+    color: var(--Base-02, #727272);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_s2subtitledark{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: Afacad;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_s2mid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_card {
+    flex: 0 0 calc((100% - 72px) / 4);
+    display: flex;
+    padding: 32px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background: var(--Base-Off-White, #FAFAFA);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.pricing_cardcontentbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+.pricing_cardtitle{
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_cardcredittitle{
+    color: var(--Yellow, #FFA602);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_cardsavetitle{
+    color: var(--Base-Success-Green, #47B147);
+    text-align: center;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_card button {
+    display: flex;
+    height: 56px;
+    padding: 16px 32px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--Yellow, #FFA602);
+    color: var(--base-Off-Black, #0F0F0F);
+    border: none;
+    font-family: Afacad;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.pricing_card button:hover{
+    padding: 16px 24px;
+    border: 1px solid var(--Yellow, #FFA602);
+    background: var(--Base-Off-White, #FAFAFA);
+}
+/* Selected pricing_card */
+.pricing_card.active {
+  border-color: orange;
+}
+
+/* Selected button */
+.pricing_card.active button {
+    opacity: 0.2;
+}
+.yellow_btnprice{
+    display: flex;
+    height: 56px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--Yellow, #FFA602);
+    color: var(--Base-Off-Black, #0F0F0F);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.yellow_btnprice:hover{
+    border-radius: 8px;
+    border: 1px solid var(--Yellow, #FFA602);
+    background: var(--Base-Off-White, #FAFAFA);
+}
+.pricing_c3{
+    display: flex;
+    width: 908px;
+    padding: 40px 0;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+    background: var(--Base-White, #FFF);
+    box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.07), 0 64.815px 46.852px 0 rgba(0, 0, 0, 0.05), 0 38.519px 25.481px 0 rgba(0, 0, 0, 0.04), 0 20px 13px 0 rgba(0, 0, 0, 0.04), 0 8.148px 6.519px 0 rgba(0, 0, 0, 0.03), 0 1.852px 3.148px 0 rgba(0, 0, 0, 0.02);
+}
+.pricing_c3top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 664px;
+}
+.pricing_c3bottom{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: auto;
+}
+.pricing_c3subtitleyellow{
+    color: var(--Yellow, #FFA602);
+    font-family: Afacad;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_textboxbar{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.pricing_textbox{
+    display: flex;
+    height: 54px;
+    padding: 16px 24px 16px 32px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid var(--Base-04, #E9E9E9);
+    background: var(--Base-Off-White, #FAFAFA);
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-family: Afacad;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.pricing_s3{
+    background: var(--Base-Off-Black, #0F0F0F);
+    padding: 80px 0px;
+}
+.pricing_c4{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.pricing_s3bottom{
+    display: flex;
+    padding: 32px 32px 32px 56px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    background: var(--Base-Off-White, #FAFAFA);
+}
+.pricing_s3question{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 41.6px */
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_s3top{
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pricing_s3title{
+    color: var(--Base-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_s3subtitle{
+    color: var(--Base-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_s3mid{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.pricing_s3midcard{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.pricing_s3midcard img{
+    height: 100px;
+}
+.pricing_s3midcardbottom{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pricing_s3midcardtitle{
+    color: var(--Base-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.pricing_s3midcardsubtitle{
+    color: var(--Base-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: Afacad;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0px;
+}
+.pricing_s3midcardsubtitlegreen{
+    color: var(--Base-Success-Green, #47B147);
+    text-align: center;
+
+    /* P/medium */
+    font-family: Afacad;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+    margin: 0px;
+}
+/* Pricing Page End */
+
+
+
+/*************************/
+/* Responsive CSS Start */
+/***********************/
+@media only screen and (max-width: 700px) {
+.desktop_none {
+    display: block !important;
+}
+
+.mobile_none {
+    display: none !important;
+}
+/* Index Page Start */
+
+/* Index Page End */
+
+/* Pricing Page Start */
+
+/* Pricing Page End */
+
+}
+
+@media only screen and (min-width: 900px) and (max-width:999px) {}
+
+@media only screen and (min-width: 1000px) and (max-width:1099px) {}
+
+@media only screen and (min-width: 1100px) and (max-width:1199px) {}
+
+@media only screen and (min-width: 1200px) and (max-width:1348px) {}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {}
+
+@media only screen and (min-width: 9000px) and (max-width:1599px) {}

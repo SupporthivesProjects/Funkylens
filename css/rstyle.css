@@ -458,7 +458,67 @@
 /* Index Page End */
 
 /* Pricing Page Start */
-
+.pricing_s1{
+    padding: 130px 12px 166px 12px;
+    background-image: url(../img/pricig_s1bgmob.png);
+}
+.pricing_c1{
+    background-size: 100% 70%;
+    background-position: center top;
+    padding: 270px 12px 0px 12px;
+}
+.pricing_s1title{
+    font-size: 32px;
+}
+.pricing_c2inner{
+    top: auto;
+    width: 100%;
+    padding: 24px;
+    box-shadow: none;
+}
+.pricing_s2title{
+    font-size: 32px;
+}
+.pricing_s3{
+    padding: 24px;
+}
+.pricing_s3mid{
+    flex-direction: column;
+}
+.pricing_s3title{
+    font-size: 32px;
+}
+.pricing_s3bottom{
+    padding: 16px;
+    gap: 16px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.pricing_s3question{
+    font-size: 24px;
+}
+.pricing_c4{
+    padding: 0px;
+}
+.yellow_btnprice{
+    width: 100%;
+}
+.pricing_c3{
+    padding: 24px;
+    width: 100%;
+}
+.pricing_c3top{
+    width: 100%;
+}
+.pricing_c3bottom{
+    width: 100%;
+}
+.pricing_textboxbar{
+    flex-direction: column;
+}
+.pricing_s2{
+    padding: 0px;
+}
 /* Pricing Page End */
 
 }
@@ -469,9 +529,20 @@
 
 @media only screen and (min-width: 1100px) and (max-width:1199px) {}
 
-@media only screen and (min-width: 1200px) and (max-width:1348px) {}
+@media only screen and (min-width: 1200px) and (max-width:1348px) {
+    .pricing_c2inner{
+        width: 1150px;
+    }
+    .pricing_card button{
+        padding: 16px;
+    }
+}
 
-@media only screen and (min-width: 1349px) and (max-width:1439px) {}
+@media only screen and (min-width: 1349px) and (max-width:1439px) {
+    .pricing_c2inner{
+        width: 1280px;
+    }
+}
 
 @media only screen and (min-width: 1440px) and (max-width:1499px) {}
 

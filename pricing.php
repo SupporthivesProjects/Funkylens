@@ -17,10 +17,10 @@
  <section class="pricing_s2">
     <div class="pricing_c2">
         <div class="pricing_c2inner">
-            <img class="hori_line1" src="./img/hori_line.svg">
-            <img class="hori_line2" src="./img/hori_line.svg">
-            <img class="ver_line1" src="./img/ver_line.svg">
-            <img class="ver_line2" src="./img/ver_line.svg">
+            <img class="hori_line1 mobile_none" src="./img/hori_line.svg">
+            <img class="hori_line2 mobile_none" src="./img/hori_line.svg">
+            <img class="ver_line1 mobile_none" src="./img/ver_line.svg">
+            <img class="ver_line2 mobile_none" src="./img/ver_line.svg">
             <div class="pricing_s2titlebar">
                 <h1 class="pricing_s2title">Credit Packs</h1>
                 <p class="pricing_s2subtitle">Simple, transparent pricing that grows with you.<br><span class="pricing_s2subtitledark">1 standard image costs 1 credit.</span></p>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Basic<h2>
+                        <h2 class="pricing_cardtitle">Basic</h2>
                         <p class="pricing_cardcredittitle">60 credits, $50</p>
                         <p class="pricing_cardsavetitle">Save 17%</p>
                     </div>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Standard<h2>
+                        <h2 class="pricing_cardtitle">Standard</h2>
                         <p class="pricing_cardcredittitle">90 credits, $70</p>
                         <p class="pricing_cardsavetitle">Save 22%</p>
                     </div>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Advanced<h2>
+                        <h2 class="pricing_cardtitle">Advanced</h2>
                         <p class="pricing_cardcredittitle">130 credits, $100</p>
                         <p class="pricing_cardsavetitle">Save 23%</p>
                     </div>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Pro<h2>
+                        <h2 class="pricing_cardtitle">Pro</h2>
                         <p class="pricing_cardcredittitle">220 credits, $150</p>
                         <p class="pricing_cardsavetitle">Save 32%</p>
                     </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Premium<h2>
+                        <h2 class="pricing_cardtitle">Premium</h2>
                         <p class="pricing_cardcredittitle">500 credits, $300</p>
                         <p class="pricing_cardsavetitle">Save 40%</p>
                     </div>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Business<h2>
+                        <h2 class="pricing_cardtitle">Business</h2>
                         <p class="pricing_cardcredittitle">1,200 credits, $600</p>
                         <p class="pricing_cardsavetitle">Save 50%</p>
                     </div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Enterprise<h2>
+                        <h2 class="pricing_cardtitle">Enterprise</h2>
                         <p class="pricing_cardcredittitle">3,500 credits, $1,500</p>
                         <p class="pricing_cardsavetitle">Save 57%</p>
                     </div>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Pro<h2>
+                        <h2 class="pricing_cardtitle">Pro</h2>
                         <p class="pricing_cardcredittitle">220 credits, $150</p>
                         <p class="pricing_cardsavetitle">Save 32%</p>
                     </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Premium<h2>
+                        <h2 class="pricing_cardtitle">Premium</h2>
                         <p class="pricing_cardcredittitle">500 credits, $300</p>
                         <p class="pricing_cardsavetitle">Save 40%</p>
                     </div>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Business<h2>
+                        <h2 class="pricing_cardtitle">Business</h2>
                         <p class="pricing_cardcredittitle">1,200 credits, $600</p>
                         <p class="pricing_cardsavetitle">Save 50%</p>
                     </div>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="pricing_card">
                     <div class="pricing_cardcontentbar">
-                        <h2 class="pricing_cardtitle">Enterprise<h2>
+                        <h2 class="pricing_cardtitle">Enterprise</h2>
                         <p class="pricing_cardcredittitle">3,500 credits, $1,500</p>
                         <p class="pricing_cardsavetitle">Save 57%</p>
                     </div>

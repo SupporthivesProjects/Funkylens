@@ -140,17 +140,6 @@
         font-size: 14px;
     }
 
-    /* Checkbox Start */
-    .c-checkboxR>.c-divR>label:before,
-    .c-checkboxR>.c-divR>.label:before {
-        /* top: 17px; */
-    }
-
-    .c-checkboxR input[type='checkbox']~label:after,
-    .c-checkboxR input[type='checkbox']~.label:after {
-        /* top: 17px; */
-    }
-
     /* Checkbox End */
     /* Checkout Css End */
     /**********************/

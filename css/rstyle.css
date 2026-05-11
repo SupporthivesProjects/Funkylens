@@ -1206,6 +1206,12 @@
 .home_s2{
     padding: 0px;
 }
+/* .home_s2bottomouter{
+    overflow-x: scroll;
+}
+.home_s2bottom{
+    width: 948px;
+} */
 .home_s3{
     flex-direction: column-reverse;
 }

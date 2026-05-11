@@ -6,12 +6,40 @@
 </style>
 <!-- Section 1 Start -->
  <section class="home_s1">
-
+    <div class="home_s1left">
+        <div class="home_s1top">
+            <div class="home_s1titlebar">
+                <p class="home_s1titleyellow">Premium stock collection<span class="home_s1lineyellow"></span></p>
+                <h1 class="home_s1title">find A story in every frame</h1>
+            </div>
+            <p class="home_s1subtitle">Lorem ipsum dolor sit amet consectetur. Pretium mauris orci et scelerisque lectus ultrices. Commodo dui orci eget gravida purus nulla sed nibh nisi. Tellus quis morbi vitae tellus velit. Duis arcu at mi egestas dictum.</p>
+        </div>
+        <div class="home_s1bottom">
+            <div class="position-relative w-100"><input type="email" class="form-control home_s1textbox" id="" placeholder="Search high-quality Images..."><img class="search_img" src="./img/home_search.svg"></div>
+            <button type="button" class="btn yellow_btnprice">Search</button>
+        </div>
+    </div>
+    <img class="home_s1rectimg mobile_none" src="./img/pricing_rect.png">
+    <div class="home_s1slidernav">
+        <button class="home_s1navbtn home_s1prev">
+            PREV
+        </button>
+        <div class="home_s1navcenter">
+            <span class="home_s1count currentSlide">01</span>
+            <div class="home_s1navline">
+                <div class="home_s1navprogress"></div>
+            </div>
+            <span class="home_s1count totalSlides">04</span>
+        </div>
+        <button class="home_s1navbtn home_s1next">
+            NEXT
+        </button>
+    </div>
  </section>
 <!-- Section 1 End -->
 
 <!-- Section 2 Start -->
- <section></section>
+<!-- <section></section> -->
 <!-- Section 2 End -->
 
 <!-- Section 3 Start -->
@@ -162,4 +190,113 @@
         });
 
     });
+</script>
+
+<script>
+    const homeSection = document.querySelector(".home_s1");
+    const nextBtn = document.querySelector(".home_s1next");
+    const prevBtn = document.querySelector(".home_s1prev");
+    const currentSlideText = document.querySelector(".currentSlide");
+    const totalSlidesText = document.querySelector(".totalSlides");
+    const progress = document.querySelector(".home_s1navprogress");
+    /* DESKTOP BACKGROUNDS */
+    const desktopImages = [
+        "./img/home_s1bg1.png",
+        "./img/home_s1bg2.png",
+        "./img/home_s1bg3.png",
+        "./img/home_s1bg4.png"
+    ];
+    /* MOBILE BACKGROUNDS */
+    const mobileImages = [
+        "./img/home_s1bg1mob.png",
+        "./img/home_s1bg2.png",
+        "./img/home_s1bg3.png",
+        "./img/home_s1bg4.png"
+    ];
+
+    let currentSlide = 0;
+
+    /* TOTAL COUNT */
+    totalSlidesText.innerText =
+    `0${desktopImages.length}`;
+
+    /* UPDATE SLIDER */
+    function updateSlider(){
+
+        /* CHECK DEVICE */
+        const activeImages =
+        window.innerWidth <= 767
+        ? mobileImages
+        : desktopImages;
+
+        /* CHANGE BACKGROUND */
+        homeSection.style.backgroundImage =
+        `url(${activeImages[currentSlide]})`;
+
+        /* REMOVE ACTIVE STATES */
+        currentSlideText.classList.remove("active");
+        totalSlidesText.classList.remove("active");
+
+        nextBtn.classList.remove("disabled");
+        prevBtn.classList.remove("disabled");
+
+        /* FIRST SLIDE */
+        if(currentSlide === 0){
+            currentSlideText.classList.add("active");
+            prevBtn.classList.add("disabled");
+        }
+        /* LAST SLIDE */
+        if(currentSlide === desktopImages.length - 1){
+            totalSlidesText.classList.add("active");
+            nextBtn.classList.add("disabled");
+        }
+
+        /* MOVE WHITE PROGRESS */
+        const lineHeight =
+        document.querySelector(".home_s1navline").offsetHeight;
+        const progressHeight =
+        progress.offsetHeight;
+        const maxMove =
+        lineHeight - progressHeight;
+        const move =
+        (currentSlide / (desktopImages.length - 1)) * maxMove;
+        progress.style.top =
+        `${move}px`;
+    }
+
+    /* NEXT BUTTON */
+    nextBtn.addEventListener("click", () => {
+
+        if(currentSlide < desktopImages.length - 1){
+
+            currentSlide++;
+
+            updateSlider();
+
+        }
+
+    });
+
+    /* PREV BUTTON */
+    prevBtn.addEventListener("click", () => {
+
+        if(currentSlide > 0){
+
+            currentSlide--;
+
+            updateSlider();
+
+        }
+
+    });
+
+    /* UPDATE ON RESIZE */
+    window.addEventListener("resize", () => {
+
+        updateSlider();
+
+    });
+
+    /* INITIAL LOAD */
+    updateSlider();
 </script>

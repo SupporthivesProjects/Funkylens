@@ -872,24 +872,24 @@ input[type=radio] {
 
 .btn_grey_2 {
     display: flex;
-    padding: 8px 16px;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    text-align: center;
-    color: var(--Base-Off-Black, #0F0F0F);
-    text-align: center;
-    font-family: "Afacad";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
+    padding: 8px 16px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    text-align: center !important;
+    color: var(--Base-Off-Black, #0F0F0F) !important;
+    text-align: center !important;
+    font-family: "Afacad" !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
     line-height: normal;
-    text-transform: capitalize;
-    margin-bottom: 0px;
+    text-transform: capitalize !important;
+    margin-bottom: 0px !important;
     border-radius: 40px !important;
-    background: var(--Base-04, #E9E9E9);
-    width: 100%;
-    max-width: 99px;
+    background: var(--Base-04, #E9E9E9) !important;
+    width: 100% !important;
+    max-width: 99px !important;
 }
 
 .btn_grey_2:hover {

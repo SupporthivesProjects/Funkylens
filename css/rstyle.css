@@ -10,7 +10,70 @@
     display: block !important;
 }
 /* Index Page Start */
-
+.home_s4{
+    padding: 80px 0px;
+}
+.home_c4{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.home_squestion{
+    display: flex;
+    padding: 32px 32px 32px 56px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 24px;
+    background: var(--Base-Off-Black, #0F0F0F);
+}
+.home_s5{
+    padding: 230px 0px;
+    background-image: url(../img/home_s5bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home_c5{
+    display: flex;
+    width: 1258px;
+    padding: 56px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    margin: auto;
+    background: var(--Base-White, #FFF);
+    box-shadow: 0 100px 80px 0 rgba(0, 0, 0, 0.07), 0 64.815px 46.852px 0 rgba(0, 0, 0, 0.05), 0 38.519px 25.481px 0 rgba(0, 0, 0, 0.04), 0 20px 13px 0 rgba(0, 0, 0, 0.04), 0 8.148px 6.519px 0 rgba(0, 0, 0, 0.03), 0 1.852px 3.148px 0 rgba(0, 0, 0, 0.02);
+}
+.home_s5title{
+    color: var(--Base-Off-Black, #0F0F0F);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Afacad;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.home_s5subtitle{
+    color: var(--Gray-500, #667085);
+    font-family: Afacad;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 0px;
+    max-width: 700px;
+}
+.home_s5subtitlebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
 /* Index Page End */
 
 /* Aboutus Page Start */
@@ -586,7 +649,26 @@
     display: none !important;
 }
 /* Index Page Start */
-
+.home_s5{
+    background-image: url(../img/home_s5bgmob.png);
+    padding: 24px 0px;
+}
+.home_c5{
+    width: 100%;
+    background-color: transparent;
+    padding: 122px 24px;
+}
+.home_s5subtitlebar{
+    flex-direction: column;
+    gap: 24px;
+}
+.home_s5title{
+    color: #FFFFFF;
+}
+.home_s5subtitle{
+    color: #FFFFFF;
+    text-align: center;
+}
 /* Index Page End */
 
 /* About Page Start */
@@ -715,7 +797,20 @@
 
 @media only screen and (min-width: 1000px) and (max-width:1099px) {}
 
-@media only screen and (min-width: 1100px) and (max-width:1199px) {}
+@media only screen and (min-width: 1100px) and (max-width:1199px) {
+    .pricing_c2inner{
+        width: 1050px;
+    }
+    .pricing_card button{
+        padding: 16px;
+    }
+    .about_s1div{
+        width: 1000px;
+    }
+    .home_c5{
+        width: 1000px;
+    }
+}
 
 @media only screen and (min-width: 1200px) and (max-width:1348px) {
     .pricing_c2inner{
@@ -727,6 +822,9 @@
     .about_s1div{
         width: 1100px;
     }
+    .home_c5{
+        width: 1100px;
+    }
 }
 
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
@@ -734,6 +832,9 @@
         width: 1280px;
     }
     .about_s1div{
+        width: 1200px;
+    }
+    .home_c5{
         width: 1200px;
     }
 }

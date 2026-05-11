@@ -39,7 +39,23 @@
 <!-- Section 1 End -->
 
 <!-- Section 2 Start -->
-<!-- <section></section> -->
+<section class="home_s2">
+    <div class="home_c2">
+        <div class="home_c2inner">
+            <img class="hori_line1 mobile_none" src="./img/hori_line.svg">
+            <img class="hori_line2 mobile_none" src="./img/hori_line.svg">
+            <img class="ver_line1 mobile_none" src="./img/ver_line.svg">
+            <img class="ver_line2 mobile_none" src="./img/ver_line.svg">
+            <div class="home_s2top">
+                <div class="home_s2titlebar">
+                    <h2 class="home_s2title">Our Most popular</h2>
+                    <p class="home_s2subtitle">Discover our latest high-quality stock images, freshly added to keep your projects up-to-date.</p>
+                </div>
+            </div>
+            <button type="button" class="btn yellow_btnprice">Discover More</button>
+        </div>
+    </div>
+</section>
 <!-- Section 2 End -->
 
 <!-- Section 3 Start -->
@@ -170,6 +186,7 @@
  </section>
 <!-- Section 5 End -->
 <?php include 'includes/footer.php'; ?>
+<!-- FAQ JS -->
 <script>
     const faqItems = document.querySelectorAll(".faq_item");
 
@@ -192,6 +209,7 @@
     });
 </script>
 
+<!-- Hero JS -->
 <script>
     const homeSection = document.querySelector(".home_s1");
     const nextBtn = document.querySelector(".home_s1next");

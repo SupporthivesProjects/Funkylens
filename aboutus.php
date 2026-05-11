@@ -16,7 +16,7 @@
 <!-- Secion 2 Starts -->
 <section class="about_s2">
     <div class="about_s2textbox">
-        <h2 class="home_s2title">How <span class="home_s2titlewhite">we do it</span><h2>
+        <h2 class="about_s2title">How <span class="about_s2titlewhite">we do it</span><h2>
         <p class="about_s2subtitle">We partner with talented photographers and artists worldwide to curate a diverse selection of stock images. Our stringent quality checks ensure that only the best visuals make it into our library.<br><br>
         Utilizing advanced search and filtering tools, we make it simple for you to find and download the perfect images, all while offering exceptional customer service.</p>
     </div>

@@ -1,5 +1,5 @@
 <?php
-  $currentPage = basename($_SERVER['PHP_SELF']);
+$currentPage = basename($_SERVER['PHP_SELF']);
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,8 +18,6 @@
     <link rel="stylesheet" href="css/t_styles.css">
     <link rel="stylesheet" href="css/rstyle.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sakkdm.css">
-    <link rel="stylesheet" href="css/sakch.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="uiframe/css/font-awesome.min.css">
     <link rel="stylesheet" href="uiframe/css/animate.min.css">
@@ -36,82 +34,83 @@
   <div class="main-div">
     <header class="header-top fixed-top" id="header-top">
       <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <div class="menu-logo">
-                <div class="menu-logo-mo">
-                    <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="" class="img-fluid d-none d-md-none d-lg-block">
-                    <img src="./img/logo-mo.svg" alt="" class="img-fluid d-lg-none d-md-block d-block">
-                  </a>
-                  <div class="menu-balence-p">
-                    <p>Balance 3,410</p>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                  </div>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto navbar-nav-mo">
-                <li class="nav-item">
-                  <a class="nav-link">My Account</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Wallet Balance: 3,410</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active">Explore</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categories
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Business</a></li>
-                    <li><a class="dropdown-item" href="#">Technology</a></li>
-                    <li><a class="dropdown-item" href="#">Nature</a></li>
-                    <li><a class="dropdown-item" href="#">People</a></li>
-                    <li><a class="dropdown-item" href="#">Travel</a></li>
-                    <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
-                    <li><a class="dropdown-item" href="#">Education</a></li>
-                    <li><a class="dropdown-item" href="#">Food and Drink</a></li>
-                    <li><a class="dropdown-item" href="#">Sports</a></li>
-                    <li><a class="dropdown-item" href="#">Fashion</a></li>
-                    <li><a class="dropdown-item" href="#">Technology</a></li>
-                    <li><a class="dropdown-item" href="#">Nature</a></li>
-                    <li><a class="dropdown-item" href="#">Business</a></li>
-                    <li><a class="dropdown-item" href="#">Technology</a></li>
-                    <li><a class="dropdown-item" href="#">Nature</a></li>
-                    <li><a class="dropdown-item" href="#">People</a></li>
-                    <li><a class="dropdown-item" href="#">Travel</a></li>
-                    <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
-                    <li><a class="dropdown-item" href="#">Education</a></li>
-                    <li><a class="dropdown-item" href="#">Food and Drink</a></li>
-                    <li><a class="dropdown-item" href="#">Sports</a></li>
-                    <li><a class="dropdown-item" href="#">Fashion</a></li>
-                    <li><a class="dropdown-item" href="#">Technology</a></li>
-                    <li><a class="dropdown-item" href="#">Nature</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">FAQ’s</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn btn-login">Login/Register</a>
-                </li>
-              </ul>
+        <div class="container">
+          <div class="menu-logo">
+            <div class="menu-logo-mo">
+              <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="" class="img-fluid d-none d-md-none d-lg-block">
+                <img src="./img/logo-mo.svg" alt="" class="img-fluid d-lg-none d-md-block d-block">
+              </a>
+              <div class="menu-balence-p">
+                <p>Balance 3,410</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
             </div>
           </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto navbar-nav-mo">
+              <li class="nav-item">
+                <a class="nav-link">My Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wallet Balance: 3,410</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Nature</a></li>
+                  <li><a class="dropdown-item" href="#">People</a></li>
+                  <li><a class="dropdown-item" href="#">Travel</a></li>
+                  <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
+                  <li><a class="dropdown-item" href="#">Education</a></li>
+                  <li><a class="dropdown-item" href="#">Food and Drink</a></li>
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Nature</a></li>
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Nature</a></li>
+                  <li><a class="dropdown-item" href="#">People</a></li>
+                  <li><a class="dropdown-item" href="#">Travel</a></li>
+                  <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
+                  <li><a class="dropdown-item" href="#">Education</a></li>
+                  <li><a class="dropdown-item" href="#">Food and Drink</a></li>
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Nature</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">FAQ’s</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-login">Login/Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-   </header>
-  
-  
+    </header>

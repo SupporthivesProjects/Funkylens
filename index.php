@@ -3,6 +3,9 @@
     header{
         background: transparent;
     }
+    body{
+        backgroung-color: #FAFAFA; 
+    }
 </style>
 <!-- Section 1 Start -->
  <section class="home_s1">
@@ -15,7 +18,7 @@
             <p class="home_s1subtitle">Lorem ipsum dolor sit amet consectetur. Pretium mauris orci et scelerisque lectus ultrices. Commodo dui orci eget gravida purus nulla sed nibh nisi. Tellus quis morbi vitae tellus velit. Duis arcu at mi egestas dictum.</p>
         </div>
         <div class="home_s1bottom">
-            <div class="position-relative w-100"><input type="email" class="form-control home_s1textbox" id="" placeholder="Search high-quality Images..."><img class="search_img" src="./img/home_search.svg"></div>
+            <div class="position-relative w-100"><input type="email" class="form-control home_s1textbox" id="" placeholder="Search high-quality Images..."><img class="homesearch_img" src="./img/home_search.svg"></div>
             <button type="button" class="btn yellow_btnprice">Search</button>
         </div>
     </div>
@@ -50,6 +53,83 @@
                 <div class="home_s2titlebar">
                     <h2 class="home_s2title">Our Most popular</h2>
                     <p class="home_s2subtitle">Discover our latest high-quality stock images, freshly added to keep your projects up-to-date.</p>
+                </div>
+                <div class="home_s2tabbtnbar">
+                    <ul class="nav custom_tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active home_tabbtn" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">Tab 1</button>
+                        </li>
+                        <!-- TAB 2 -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link home_tabbtn" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">Tab 2</button>
+                        </li> 
+                        <!-- TAB 3 -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link home_tabbtn" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">Tab 3</button>
+                        </li>
+                        <!-- TAB 4 -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link home_tabbtn" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">Tab 4</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- TAB CONTENT -->
+            <div class="tab-content custom_tabcontent w-100">
+                <!-- CONTENT 1 -->
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                    <div class="home_s2bottomouter">
+                        <div class="home_s2bottom">
+                            <img src="./img/home_tabimg1.png">
+                            <img src="./img/home_tabimg2.png">
+                            <img src="./img/home_tabimg3.png">
+                            <img src="./img/home_tabimg4.png">
+                            <img src="./img/home_tabimg5.png">
+                            <img src="./img/home_tabimg6.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT 2 -->
+                <div class="tab-pane fade" id="tab2" role="tabpanel">
+                    <div class="home_s2bottomouter">
+                        <div class="home_s2bottom">
+                            <img src="./img/home_tabimg6.png">
+                            <img src="./img/home_tabimg5.png">
+                            <img src="./img/home_tabimg4.png">
+                            <img src="./img/home_tabimg3.png">
+                            <img src="./img/home_tabimg2.png">
+                            <img src="./img/home_tabimg1.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT 3 -->
+                <div class="tab-pane fade" id="tab3" role="tabpanel">
+                    <div class="home_s2bottomouter">
+                        <div class="home_s2bottom">
+                            <img src="./img/home_tabimg1.png">
+                            <img src="./img/home_tabimg2.png">
+                            <img src="./img/home_tabimg3.png">
+                            <img src="./img/home_tabimg6.png">
+                            <img src="./img/home_tabimg5.png">
+                            <img src="./img/home_tabimg4.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTENT 4 -->
+                <div class="tab-pane fade" id="tab4" role="tabpanel">
+                    <div class="home_s2bottomouter">
+                        <div class="home_s2bottom">
+                            <img src="./img/home_tabimg6.png">
+                            <img src="./img/home_tabimg5.png">
+                            <img src="./img/home_tabimg4.png">
+                            <img src="./img/home_tabimg1.png">
+                            <img src="./img/home_tabimg2.png">
+                            <img src="./img/home_tabimg3.png">
+                        </div>
+                    </div>
                 </div>
             </div>
             <button type="button" class="btn yellow_btnprice">Discover More</button>

@@ -25,102 +25,104 @@
             <h1 class="pricing_s2title">Credit Packs</h1>
             <p class="pricing_s2subtitle">Simple, transparent pricing that grows with you.<br><span class="pricing_s2subtitledark">1 standard image costs 1 credit.</span></p>
         </div>
-        <div class="pricing_s2mid">
-            <div class="pricing_card active">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Starter</h2>
-                    <p class="pricing_cardcredittitle">35 credits, $30</p>
-                    <p class="pricing_cardsavetitle">Save 10%</p>
+        <div class="pricing_s2midouter">
+            <div class="pricing_s2mid">
+                <div class="pricing_card active">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Starter</h2>
+                        <p class="pricing_cardcredittitle">35 credits, $30</p>
+                        <p class="pricing_cardsavetitle">Save 10%</p>
+                    </div>
+                    <button>Selected</button>
                 </div>
-                <button>Selected</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Basic</h2>
-                    <p class="pricing_cardcredittitle">60 credits, $50</p>
-                    <p class="pricing_cardsavetitle">Save 17%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Basic</h2>
+                        <p class="pricing_cardcredittitle">60 credits, $50</p>
+                        <p class="pricing_cardsavetitle">Save 17%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Standard</h2>
-                    <p class="pricing_cardcredittitle">90 credits, $70</p>
-                    <p class="pricing_cardsavetitle">Save 22%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Standard</h2>
+                        <p class="pricing_cardcredittitle">90 credits, $70</p>
+                        <p class="pricing_cardsavetitle">Save 22%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Advanced</h2>
-                    <p class="pricing_cardcredittitle">130 credits, $100</p>
-                    <p class="pricing_cardsavetitle">Save 23%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Advanced</h2>
+                        <p class="pricing_cardcredittitle">130 credits, $100</p>
+                        <p class="pricing_cardsavetitle">Save 23%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Pro</h2>
-                    <p class="pricing_cardcredittitle">220 credits, $150</p>
-                    <p class="pricing_cardsavetitle">Save 32%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Pro</h2>
+                        <p class="pricing_cardcredittitle">220 credits, $150</p>
+                        <p class="pricing_cardsavetitle">Save 32%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Premium</h2>
-                    <p class="pricing_cardcredittitle">500 credits, $300</p>
-                    <p class="pricing_cardsavetitle">Save 40%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Premium</h2>
+                        <p class="pricing_cardcredittitle">500 credits, $300</p>
+                        <p class="pricing_cardsavetitle">Save 40%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Business</h2>
-                    <p class="pricing_cardcredittitle">1,200 credits, $600</p>
-                    <p class="pricing_cardsavetitle">Save 50%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Business</h2>
+                        <p class="pricing_cardcredittitle">1,200 credits, $600</p>
+                        <p class="pricing_cardsavetitle">Save 50%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Enterprise</h2>
-                    <p class="pricing_cardcredittitle">3,500 credits, $1,500</p>
-                    <p class="pricing_cardsavetitle">Save 57%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Enterprise</h2>
+                        <p class="pricing_cardcredittitle">3,500 credits, $1,500</p>
+                        <p class="pricing_cardsavetitle">Save 57%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Pro</h2>
-                    <p class="pricing_cardcredittitle">220 credits, $150</p>
-                    <p class="pricing_cardsavetitle">Save 32%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Pro</h2>
+                        <p class="pricing_cardcredittitle">220 credits, $150</p>
+                        <p class="pricing_cardsavetitle">Save 32%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Premium</h2>
-                    <p class="pricing_cardcredittitle">500 credits, $300</p>
-                    <p class="pricing_cardsavetitle">Save 40%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Premium</h2>
+                        <p class="pricing_cardcredittitle">500 credits, $300</p>
+                        <p class="pricing_cardsavetitle">Save 40%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Business</h2>
-                    <p class="pricing_cardcredittitle">1,200 credits, $600</p>
-                    <p class="pricing_cardsavetitle">Save 50%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Business</h2>
+                        <p class="pricing_cardcredittitle">1,200 credits, $600</p>
+                        <p class="pricing_cardsavetitle">Save 50%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
-            </div>
-            <div class="pricing_card">
-                <div class="pricing_cardcontentbar">
-                    <h2 class="pricing_cardtitle">Enterprise</h2>
-                    <p class="pricing_cardcredittitle">3,500 credits, $1,500</p>
-                    <p class="pricing_cardsavetitle">Save 57%</p>
+                <div class="pricing_card">
+                    <div class="pricing_cardcontentbar">
+                        <h2 class="pricing_cardtitle">Enterprise</h2>
+                        <p class="pricing_cardcredittitle">3,500 credits, $1,500</p>
+                        <p class="pricing_cardsavetitle">Save 57%</p>
+                    </div>
+                    <button>Select Package</button>
                 </div>
-                <button>Select Package</button>
             </div>
         </div>
         <button type="button" class="btn yellow_btnprice">Purchase Credits</button>
